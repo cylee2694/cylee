@@ -8,7 +8,7 @@
 </head>
 <body>
 	<a href = "RegisterSubject.jsp">Register Subject</a><br>
-	<a href = "SubjectList.jsp">Show SubjectList</a><br>
+	<a href = "SubjectList.do">Show SubjectList</a><br>
 	<a href="/ExamProject/result/logoutResult.jsp">LogOut</a>
 </body>
 </html>

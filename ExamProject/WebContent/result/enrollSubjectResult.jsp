@@ -12,7 +12,10 @@
 	ID: <input type="text" name="id" />
 	<input type="submit" value="search" /><br>
 	</form>
+	${subName }
+	<form action="EnrollSubject2.do" method="post">
+		<input type="submit" value="enroll" /><br>
+	</form>
 	<%@ include file = "/result/homeMenu2.jsp" %>
-	
 </body>
 </html>

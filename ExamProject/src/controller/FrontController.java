@@ -23,6 +23,8 @@ public class FrontController extends HttpServlet{
 		map = new HashMap<String,Controller>();
 		map.put("/login.do", new LoginController());
 		map.put("/RegisterSubject.do", new RegisterSubjectController());
+		map.put("/SubjectList.do", new SubjectListController());
+		map.put("/EnrollSubject.do", new EnrollSubjectController());
 	}
 	
 	

@@ -127,4 +127,27 @@ public Connection connect() {
 		}
 		return result;
 	}
+	public String EnrollSubject(String id) {
+		// TODO Auto-generated method stub
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs= null;
+		String subName= null;
+		try {
+				conn = connect();
+				pstmt = conn.prepareStatement("select name from subject where id = ?;");
+				pstmt.setString(1, id);
+				rs= pstmt.executeQuery();
+				if(rs.next()) { 
+					subName = rs.getString(1);
+				}
+				
+		}catch(Exception e) {
+			System.out.println("enroll error"+e);
+		}
+		finally {
+			close(conn,pstmt,rs);
+		}
+		return subName;
+	}
 }

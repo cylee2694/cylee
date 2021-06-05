@@ -22,4 +22,9 @@ public class Service {
 		// TODO Auto-generated method stub
 		return dao.login2(id,pwd);
 	}
+	public String EnrollSubject(String id) {
+		// TODO Auto-generated method stub
+		return dao.EnrollSubject(id);
+		
+	}
 }

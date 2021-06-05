@@ -7,6 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	
+	<p>
+	<a href="/ExamProject/StudentMenu.jsp">Back to Menu</a>
 </body>
 </html>
